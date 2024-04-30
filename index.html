@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="left-top"></div>
+            <div class="left-center">
+
+                <div class="holiday-section">
+                    <h2 id="loading">Loading holidays...</h2>
+                    <div id="holidays" class="holiday-list"></div>
+                </div>
+            </div>
+            <!-- <div class="left-bottom"></div> -->
+        </div>
+        <div class="center-side">
+            <div class="center-top">
+                <div class="clock-container" id="clock"></div>
+            </div>
+            <div class="center-center">
+                <div class="clock">
+                    <div class="hour hand" id="hour"></div>
+                    <div class="minute hand" id="minute"></div>
+                    <div class="seconds hand" id="seconds"></div>
+                </div>
+            </div>
+            <!-- <div class="center-bottom"></div> -->
+        </div>
+        <div class="right-side">
+            <div class="right-top"></div>
+            <div class="right-center">
+                <span class="data">
+                    <span class="wind">
+                        <img src="assets/wind.png" alt="">
+                        <i class='fas fa-wind' style='font-size:48px;color:white'></i>
+                        <h4><span class="wind_speed">No Information Available</span></h4>
+                    </span>
+                    <span class="sunshine">
+                        <img src="assets/beach.png" alt="">
+                        <h4><span class="sunrise">No Information Available</span></h4>
+                    </span>
+                </span>
+
+                <span class="data-temp">
+                    <img src="" alt="" srcset="" id="weather-icon">
+                    <div>
+                        <h1 class="feelsLike">Error</h1>
+                        <h3>FEELS LIKE</h3>
+                    </div>
+                </span>
+
+                <div class="days-forecast">
+                    <h4 class="underline" style="text-align: center; padding-bottom: 20px;">WEATHER FORECAST BHUBANESWAR, IN</h4>
+                    <ul class="weather-cards">
+                      
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <div class="right-bottom"></div> -->
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="headline-container">
+            <h4>BBC recent Stories ...</h4>
+            <div class="headline" id="headline"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
